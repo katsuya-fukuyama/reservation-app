@@ -6,6 +6,7 @@ import { CommonModule } from '@angular/common';
 import { ProductComponent } from './product.component';
 import { ProductDetailComponent } from './product-detail/product-detail.component';
 import { ProductListComponent } from './product-list/product-list.component';
+import { ProductService } from './shared/product.services';
 
 const routes: Routes = [
   {
@@ -24,7 +25,7 @@ const routes: Routes = [
   declarations: [
     ProductDetailComponent,
     ProductListComponent,
-    ProductComponent,
+    ProductComponent
   ],
 
   imports: [
@@ -32,7 +33,9 @@ const routes: Routes = [
     CommonModule
   ],
 
-  providers: [],
+  providers: [
+    ProductService
+  ],
   bootstrap: []
 })
 export class ProductModule { }
