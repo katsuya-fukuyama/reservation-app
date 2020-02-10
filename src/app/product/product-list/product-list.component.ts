@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 // import { products } from '../../products';
 import { ProductService } from '../shared/product.services';
+// import { Observable } from 'rxjs';
 
 @Component({
   selector: 'app-product-list',
@@ -23,8 +24,8 @@ export class ProductListComponent implements OnInit {
       (data) => {
         this.products = data
       },
-      (err) => { console.log('次のエラーが出力されました：' + err) }
-      // () => { console.log('完了しました！') }
+      (err) => { console.log('次のエラーが出力されました：' + err) },
+      () => { console.log('完了しました！') }
     )
   }
 

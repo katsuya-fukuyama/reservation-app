@@ -9,7 +9,7 @@ import { ProductService } from '../shared/product.services';
   styleUrls: ['./product-detail.component.scss']
 })
 export class ProductDetailComponent implements OnInit {
-  product;
+  product: any;
 
   constructor(
     private route: ActivatedRoute,
@@ -20,6 +20,7 @@ export class ProductDetailComponent implements OnInit {
     this.route.paramMap.subscribe(params => {
       // this.product = products[+params.get('productId')];
       // this.product = this.productService.getProductById(params.get('productId'))
+
       const productObservable = this.productService.getProductById(params.get('productId'))
       productObservable.subscribe(
         (data) => {
