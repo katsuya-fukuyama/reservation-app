@@ -72,28 +72,6 @@ class SampleDb {
       }
     )
   }
-  seeDb() {
-    this.pushProductsToDb()
-  }
-  // async initDb() {
-  //   await this.cleanDb()
-  //   this.pushProductsToDb()
-  // }
-
-  // async cleanDb() {
-  //   await Product.deleteMany({})
-  // }
-
-  // pushProductsToDb() {
-  //   this.products.forEach(
-  //     (product) => {
-  //       const newProduct = new product(product)
-  //       newProduct.save(function(err) {
-  //         if (err) { console.log(err); }
-  //       })
-  //     }
-  //   )
-  // }
   // seeDb() {
   //   this.pushProductsToDb()
   // }

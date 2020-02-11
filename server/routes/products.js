@@ -23,14 +23,4 @@ router.get('/:productId', function(req, res) {
   
 })
 
-// router.get('/:productId', function(req, res) {
-//   const productId = req.params.productId
-//   Product.findById(productId, function(err, foundProduct) {
-//     if(err) {
-//       return res.status(422).send({errors: ({title: 'Product error', detail: 'product not found!'})})
-//     }
-//     return res.json(foundProduct)
-//   })
-// })
-
 module.exports = router
